@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./images/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind CSS with HTML Started</title>
+    {{>head title="First Page"}}
+    <!-- import needed links -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
   </head>
   <body>
-    <div class="bg-black text-white">TailwindCSS with HTML started project</div>
-    <p class="font-bold">Font Bold</p>
-    <p class="font-black">Font Black</p>
-    <p class="font-medium">Font Medium</p>
-    <script type="module" src="./main.js"></script>
+    {{>header}}
+    <div id="app" class="text-3xl">TEST</div>
+    {{>footer}}
+    <script type="module" src="./src/scripts/main.js"></script>
   </body>
 </html>
